@@ -19,7 +19,6 @@ jar {
 	baseName = 'issue-manager'
 	version = '0.0.1-SNAPSHOT'
 }
-sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
@@ -33,6 +32,9 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile('org.springframework.social:spring-social-github:1.0.0.BUILD-SNAPSHOT')
+	compile("org.springframework.boot:spring-boot-starter-mobile")
+	compile("org.springframework.boot:spring-boot-starter-actuator")
+	compile("org.springframework.boot:spring-boot-starter-remote-shell")
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
 
